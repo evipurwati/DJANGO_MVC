@@ -20,24 +20,24 @@
         <div class="row blog-content">
             <div class="row isi">
         
-            {% for data in blogs %}
+            {% for data in db_blog %}
         
             <div class="blog">
                 <div class="col-md-12 blog-image">
-                    <img src="{{data.foto.url}}" alt="" class="blog-images">
+                    <img src="{{ data.foto.url }}" alt="" class="blog-images">
                 </div>
                 <div class="row ket" >
                     <div class="col-md-6 tanggal">
-                        <span style="font-size: 10px">{{data.created}}</span>
+                        <span style="font-size: 10px">{{ data.created }}</span>
                     </div>
                     <div class="col-md-6 comment">
-                        <span style="font-size: 10px">{{data.comments}}Comments</span>
+                        <span style="font-size: 10px">{{ data.comments }} Comments</span>
                     </div>
                 </div>
                 <br>
                 <div class="col-md-12 blog-text">
-                    <h3>{{data.title}}</h3>
-                    <p>{{data.content}}...</p>
+                    <h3>{{ data.title }}</h3>
+                    <p>{{ data.content|truncatewords:30 }}</p>
                     <a href="http://127.0.0.1:8000/blog" style="color: #00cad1">Baca Selengkapnya</a>
                     <br>
                     <br>
@@ -45,6 +45,9 @@
             </div>
         
             {% endfor %}
+
+            </div>    
+        </div>
         
         {% endblock %}
 </body>

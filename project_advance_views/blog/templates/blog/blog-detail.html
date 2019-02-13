@@ -1,0 +1,48 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+
+<head>
+    {% block title %}
+    <title>Blog</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+
+
+<body>
+       {% block content %}
+
+        <div class="row blog-content">
+            <div class="row isi">
+                <div class="blog">
+                    <div class="col-md-12 blog-image">
+                        <img src="{{data.foto.url}}" alt="" class="blog-images">
+                    </div>
+                    <div class="row ket" >
+                        <div class="col-md-6 tanggal">
+                            <span style="font-size: 10px">{{blogs.created}}</span>
+                        </div>
+                        <div class="col-md-6 comment">
+                            <span style="font-size: 10px">{{blogs.comments}} Comments</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12 blog-text">
+                        <h3>{{blogs.title}}</h3>
+                        <p>{{blogs.content|truncatewords:30}}...</p>
+                        <a href="http://127.0.0.1:8000/blog" style="color: #00cad1">Baca Selengkapnya</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+        
+        {% endblock %}
+</body>

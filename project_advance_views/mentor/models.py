@@ -9,6 +9,7 @@ from django.db import models as models
 class Mentor(models.Model) :
     foto = models.ImageField()
     nama_lengkap = models.CharField(max_length = 255)
+    position = models.CharField(max_length=100)
     description = models.TextField(max_length = 600)
 
     def __str__(self) :

@@ -1,4 +1,4 @@
-from django.contrib import admin        # Default
+from django.contrib import admin        
 from .models import BlogPost
 
 my_model = [BlogPost]
