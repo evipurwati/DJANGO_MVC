@@ -1,0 +1,58 @@
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <title>Blog</title>
+</head>
+
+
+{% block content %}
+<div class="row blog-content">
+    <div class="row isi">
+        <div class="blog">
+            <div class="col-md-12 blog-image">
+                <img src="{% static 'images/kendala-sepulsa.jpg' %}" alt="" class="blog-images">
+            </div>
+            <div class="row ket" >
+                <div class="col-md-6 tanggal">
+                    <span style="font-size: 10px">September 25, 2018</span>
+                </div>
+                <div class="col-md-6 comment">
+                    <span style="font-size: 10px">0 Comment</span>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-12 blog-text">
+                <h3>Punya Kendala ? Segera Hubungi Customer Service Sepulsa!</h3>
+                <p>Bagi Sepulsa, kepuasan pelanggan adalah yang utama. Kami senantiasa mendengarkan keluhan maupun kendala yang kamu hadapi selama melakukan transaksi di Sepulsa. Umumnya pelanggan Sepulsa menghadapi kendala sebagai berikut: Status Order Pending jika transaksi pembayaran sudah selesai, namun status order kamu masih pending dalam jangka waktu 15 menit. segera hubungi tim Customer Service dengan menyertakan email ...</p>
+                <a href="#" style="color: #00cad1">Baca Selengkapnya</a>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="col-md-12 blog-image">
+                <img src="{% static 'images/sms.png' %}" alt="" class="blog-images">
+            </div>
+            <div class="row ket">
+                <div class="col-md-6 tanggal">
+                    <span style="font-size: 10px">Agustus 14, 2018</span>
+                </div>
+                <div class="col-md-6 comment">
+                    <span style="font-size: 10px">0 Comment</span>
+                </div>
+            </div>
+            <div class="col-md-12 blog-text">
+                <h3>OTP, Si Kode Rahasia nan Berbahaya</h3>
+                <p>Kemudahan dalam berbagai transaksi perbankan memang banyak memberikan keuntungan bagi nasabah. Bayangkan saja, aktivitas jual beli yang pada awalnya membutuhkan waktu dan tempat, kini bisa dilakukan tanpa perlu beranjak dari tempat duduk kamu dan pembayaran lunas dalam hitungan detik dengan transaksi online. Namun tanpa disadari, kemudahan tersebut bukan berarti tanpa celah. Sebelum kita membahas lebih...</p>
+                <a href="#" style="color: #00cad1">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

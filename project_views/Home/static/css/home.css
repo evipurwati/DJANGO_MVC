@@ -1,0 +1,147 @@
+.box{
+    padding-left: 100px;
+}
+
+#up{
+    padding-top: 10px;
+}
+
+span{
+    font-size: 18px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+
+ul{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+li{
+    display : inline-block;
+    margin : 10px;
+}
+
+a{
+    color: black;
+}
+
+#temp{
+    color: white;
+    padding: 10px 310px;
+}
+
+.isi{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+}
+
+#desc{
+    padding-left: 50px;
+}
+
+h5, p{
+    text-align: left;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h6{
+    font-size: 20px;
+}
+
+.learn{
+    width: 70%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+    max-width: 100%;
+}
+
+#foto-learn{
+    height: 130px;
+    display: block;
+    justify-items: center;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: 10px 15px;
+}
+
+.square{
+    height: 178px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid #EBEBEB;
+}
+
+#prod{
+    padding: 5px;
+}
+
+#contact{
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+.product{
+    width: 100%;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+}
+
+/* CSS Blog */
+
+.content-blog{
+    width: 50%;
+    text-align: left;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.blog-images{
+    width: 100%;
+}
+
+.blog-content, .mentor-content, .mentee-content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment{
+    text-align: right;
+}
+
+.ket{
+    font-size: 1px;
+}
+
+.mentor-img, .author-img{
+    width: 100%;
+}
+
+.mentee-img{
+    width: 60%;
+}
+
+.author-content{
+    width : 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
